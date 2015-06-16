@@ -33,3 +33,8 @@ function showLast() {
   last = section[0].lastElementChild;
   last.style.display = "block";
 }
+
+function hideOnDelete(index) {
+  var rows = document.getElementsByClassName("association container");
+  rows[index].style.display = "none";
+}
