@@ -16,10 +16,11 @@
 //= require_tree .
 
 function disableButton() {
-  var buttons = document.getElementsByClassName("btn");
-  buttons[6].disabled = true;
-  buttons[6].value = "Updating...";
-    return true;
+  var submit = document.getElementsByClassName("actions");
+  var button = submit[0].lastElementChild;
+  button.value = "Updating...";
+  button.disabled = true;
+  return true;
 }
 
 function hideLast() {
