@@ -27,3 +27,9 @@ function hideLast() {
   last = section[0].lastElementChild;
   last.style.display = "none";
 }
+
+function showLast() {
+  var section = document.getElementsByClassName("associations");
+  last = section[0].lastElementChild;
+  last.style.display = "block";
+}
