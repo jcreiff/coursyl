@@ -39,3 +39,8 @@ function hideOnDelete(index) {
   var rows = document.getElementsByClassName("association container");
   rows[index].style.display = "none";
 }
+
+function deleteMe(index) {
+  var records = document.getElementsByClassName("destroy")
+  records[index].checked = "true";
+}
